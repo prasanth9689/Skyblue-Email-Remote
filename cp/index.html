@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Download Backup Run Shell Script</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="../assets/css/styles.css">
+     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    
+<!--    <style>-->
+<!--        #btn {-->
+<!--    width: auto;-->
+<!--	color: #fff;-->
+<!--	background: #337ab7;-->
+<!--    background-color: #0085d5;-->
+<!--    border: rgb(195, 216, 255) 1px;-->
+<!--    color: white;-->
+<!--    padding: 10px 32px;-->
+<!--    display: block;-->
+<!--    margin: auto;-->
+<!--    border-radius:10px;-->
+<!--	margin-top: 25px;-->
+<!--	margin-bottom: 10px;-->
+<!--	box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); -->
+<!--	cursor: pointer; -->
+<!--	outline: none; -->
+<!--	transition: 0.2s all; -->
+<!--}-->
+<!--    </style>-->
+</head>
+<body>
+  
+        <div id="btn" type="submit" class="custom-nav">Credse cPanel</div>
+   
+   
+        <!--<form method="post" action="run_backup_script.php">-->
+        <!--<button id="btn" type="submit" class="custom-button">Download Backup</button>-->
+        <!--</form>-->
+    
+      <div class="container">
+        <div class="row">
+            <a  href="https://skyblue.co.in:8080/" target="_blank" class="col-sm-3">
+                <div class="card custom-card">
+                    <div class="card-body custom-card-body">File manager</div>
+                </div>
+            </a>
+            
+            <a class="col-sm-3" href="http://217.77.3.238:3000/">
+                <div class="card custom-card">
+                    <div class="card-body custom-card-body">Code server 2</div>
+                </div>
+            </a>
+            
+            <a href="https://skyblue.co.in/phpmyadmin/" target="_blank" class="col-sm-3">
+                <div class="card custom-card">
+                    <div class="card-body custom-card-body">PhpMyAdmin</div>
+                </div>
+            </a>
+            
+             <a class="col-sm-3" href="javascript:void(0)" onclick="postRequest()">
+                 
+                <div class="card custom-card">
+                    <div class="card-body custom-card-body">Download Backup</div>
+                </div>
+                
+            </a>
+            
+        </div>
+    </div>
+
+    <script>
+        function postRequest() {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = 'run_backup_script.php';
+
+            const hiddenField = document.createElement('input');
+            hiddenField.type = 'hidden';
+            hiddenField.name = 'key';
+            hiddenField.value = 'value';
+
+            form.appendChild(hiddenField);
+            document.body.appendChild(form);
+            form.submit();
+        }
+    </script>
+
+</body>
+</html>
