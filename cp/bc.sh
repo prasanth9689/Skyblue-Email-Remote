@@ -194,7 +194,7 @@ DESTINATION_FILE="/var/www/mail.skyblue.co.in/cp/backup_file_$current_date.tar.g
 mkdir -p "$(dirname "$DESTINATION_FILE")"
 
 # Compress all folders inside the specified directory into a single tar.gz file
-tar -czvf "$DESTINATION_FILE" -C "$DIRECTORY_TO_COMPRESS" .
+tar --exclude=".git" tar -czvf "$DESTINATION_FILE" -C "$DIRECTORY_TO_COMPRESS" .
 
 echo "Compressed all folders in $DIRECTORY_TO_COMPRESS to $DESTINATION_FILE"
 
