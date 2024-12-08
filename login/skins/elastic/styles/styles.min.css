@@ -81,7 +81,10 @@ body,
 html {
   height: 100%;
 }
-.popover,
+
+ /* /assets/css/home.css */
+
+/* .popover,
 body,
 button,
 div.tox,
@@ -91,7 +94,7 @@ optgroup,
 select,
 textarea {
   font-family: Roboto, sans-serif;
-}
+} */
 @font-face {
   font-family: Icons;
   font-style: normal;
@@ -209,7 +212,7 @@ html.iframe body {
   justify-content: center;
 }
 #layout > div > .header {
-  background-color: #f4f4f4;
+  background-color: white;
 }
 #layout > div > .header .header-title {
   overflow: hidden;
@@ -3124,11 +3127,12 @@ ul.treelist li.selected {
   color: inherit;
   background-color: transparent;
 }
-ul.treelist li.selected > a,
+/* Updated home.css */
+/* ul.treelist li.selected > a,
 ul.treelist li.selected > div > a {
   color: #2c363a;
   background-color: #ebf9ff;
-}
+} */
 ul.treelist li ul {
   padding: 0;
 }

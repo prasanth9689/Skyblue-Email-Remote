@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+}
+
+
+/*Definition des variables de couleur*/
+/*-------------------------------------------------------------------------------------------------    2*/
+:root {
+    --hoverButton: #00000018;
+    --hoverButton2: #00000012;
+    --simpleDark: #00000078;
+    --redSide: #C84031;
+    --resideLight: #C8403130;
+    --lightDark: #F9E9E7;
+    --lightDarkFont: #F9E9E771;
+    --simpleBlue: #3474E0;
+    --simpleGreen: #3C7D40;
+    --simpleOrange: #D6792D;
+    --borderElement: #EDEFF1;
+}
+
+/*Styles pour le header2 du website*/
+/*-------------------------------------------------------------------------------------------------     1*/
+
+.header2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em 0.95rem 0.4em 1.5rem;
+    border-bottom: 1.5px solid var(--borderElement);
+    height: 72px;
+    background-color: white;
+}
+
+.leftSide {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5.35em;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header2 .left .search-main-container {
+    cursor: pointer;
+}
+
+.header2 .left search-main-container.burger {
+    padding: 0.65rem;
+    transition: all 0.15s;
+    border-radius: 50%;
+}
+
+.header2 .left search-main-container.burger:hover {
+    background: var(--hoverButton);
+}
+
+.header2 .left a search-main-container {
+    background-color: transparent;
+    transform: scale(90%) translateY(2px);
+}
+
+.logo1{
+    display: none;
+}
+
+.search-container {
+    display: flex;
+    width: 57%;
+    height: 48px;
+}
+
+.input2 {
+    background: white;
+    border-style: solid;
+    border-color: #0043a9;
+    /* border-color: #cfc8c8; */
+    border-width: thin;
+    padding: 0.25em;
+    padding-left: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+.search-main-container {
+    padding: 0.25em;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.search-main-container:active {
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.search-main-container:hover {
+    background: #2075f6;
+}
+
+.search-main-container {
+    background-color: #0043a9;
+    height: 48px;
+    width: 80px;
+}
+
+.input2:hover {
+    background-color: #f4f7fa;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* .search .search-main-container:last-child {
+    position: absolute;
+    top: 50%;
+    right: 0em;
+    transform: translateY(-49%);
+    width: 80px;
+} */
+
+
+
+
+.header2 .rightSide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.header2 .rightSide .search-main-container {
+    padding: 0.45em;
+    border-radius: 50%;
+    transition: all 0.15s;
+    background: transparent;
+}
+
+.header2 .rightSide .search-main-container:hover {
+    background: var(--hoverButton);
+}
+
+.rightSide .user {
+    display: flex;
+    justify-content: center;
+    outline: 3px solid transparent;
+    transition: all 0.15s;
+    align-items: center;
+    width: 2.65em;
+    height: 2.65em;
+    border-radius: 50%;
+    background: rgb(231, 231, 231);
+    background: radial-gradient(circle, rgba(231, 231, 231, 1) 0%, rgba(238, 238, 238, 1) 61%, rgba(157, 157, 157, 1) 100%);
+    /* background: #4126f1; */
+    /*Permet de definir la couleur pour le profil d'un user*/
+}
+
+.rightSide .user:hover {
+    outline: 3px solid var(--hoverButton);
+}
+
+.rightSide p {
+    padding-top: 1px;
+    color: black;
+    font-size: 1.3em;
+    display: block;
+    background: transparent;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .logo1{
+        display: block;
+        height: 80px;
+        width: 80px;
+    }
+
+    .input2 {
+        background: white;
+        border-style: solid;
+        border-color: #0043a9;
+        /* border-color: #cfc8c8; */
+        border-width: thin;
+        padding: 0.25em;
+        padding-left: 10px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        cursor: pointer;
+        transition: all 0.15s;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 1em;
+    }
+
+    .leftSide {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+    }
+}

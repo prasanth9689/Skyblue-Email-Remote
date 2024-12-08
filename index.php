@@ -1,5 +1,5 @@
 <?php
 
-echo "hello monika"
+echo "server working"
 
 ?>
