@@ -8,8 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
 	<meta name="theme-color" content="#f4f4f4">
 	<meta name="msapplication-navbutton-color" content="#f4f4f4">
-	<!-- <link rel="shortcut icon" href="../assets/img/favicon.ico?s=1725175896"> -->
-
 	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
@@ -45,9 +43,7 @@
 	</script>
 
 	<script src="plugins/jqueryui/js/jquery-ui.min.js?s=1725175896"></script>
-
 	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-	<!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="../assets/css/flaticon.css">
 	<link rel="stylesheet" href="../assets/css/price_rangs.css">
@@ -67,24 +63,12 @@
 </head>
 
 <body class="task-login action-none">
-
-	<!--
-	
-Hided default roundcube 
-
-<div id="layout">
-<roundcube:include file="includes/layout.html" />
-
--->
-
 	<header>
-
 		<div class="header-area header-transparrent">
 			<div class="headder-top header-sticky">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-3 col-md-2">
-							<!-- Logo -->
 							<div class="logo">
 								<a href="https://jobs.skyblue.co.in/"><img class="logo_img" src="../assets/img/logo.png"
 										alt=""></a>
@@ -94,31 +78,18 @@ Hided default roundcube
 
 						<div class="col-lg-9 col-md-9">
 							<div class="menu-wrapper">
-								<!-- Main-menu -->
 								<div class="main-menu">
 									<nav class="d-none d-lg-block">
 										<ul id="navigation">
-											<!-- <li><a href="index.html">Home</a></li>
-										 <li><a href="../price.html">Price </a></li>
-										 <li><a href="offer.html">Offer</a></li> -->
-
 										</ul>
 									</nav>
 								</div>
-								<!-- Header-btn -->
-								<!-- <div class="header-btn d-none f-right d-lg-block">
-							   <p>For support contact
-								  <p style="color: #0174BE;"> +91 8940570614</p>
-								 </p>
-							 </div> -->
-
 								<div class="phone-support-text">
 									For support contact
 									<p class="mobile-no"> +91 8940570614</p>
 								</div>
 							</div>
 						</div>
-						<!-- Mobile Menu -->
 						<div class="col-12">
 							<div class="mobile_menu d-block d-lg-none"></div>
 						</div>
@@ -126,10 +97,7 @@ Hided default roundcube
 				</div>
 			</div>
 		</div>
-		<!-- Header End -->
 	</header>
-
-
 
 	<h1 class="voice">
 		<roundcube:object name="productname" />
@@ -137,14 +105,8 @@ Hided default roundcube
 	</h1>
 
 	<div id="layout-content" class="selected no-navbar" role="main" autocomplete="new-password">
-		<!-- <roundcube:object name="logo" src="/images/logo.svg" id="logo" alt="Logo" /> -->
 		<roundcube:form id="login-form" name="login-form" method="post" class="propform" autocomplete="new-password">
 			<h3 class="login"><strong>LOGIN</strong></h3>
-
-			<!-- <roundcube:object name="loginform" form="login-form" size="40" submit=true class="form-control" /> -->
-
-			<!-- New added  -->
-
 			<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input
 				type="hidden" name="_timezone" id="rcmlogintz" value="_default_"><input type="hidden" name="_url"
 				id="rcmloginurl" value="" autocomplete="new-password">
@@ -165,17 +127,26 @@ Hided default roundcube
 				</tbody>
 			</table>
 			<p class="formbuttons">
-				<!-- <button type="submit" id="rcmloginsubmit" class="button mainaction submit">Login</button> -->
 				<button type="submit" id="" class="btn">Login</button>
 			<div style="margin-top: -10px; text-align: end; margin-right: 10px; cursor: pointer; margin-bottom: -10px;">
 				Forgot password</div>
 			</p>
 
 			<p>
-				<button type="submit" id="btn-cr">Create an account</button>
+
+				<button onclick="openPrice()" type="submit" id="btn-cr">Create an account</button>
+
 			</p>
 
+			<script>
 
+				function openPrice() {
+					var link = document.createElement('a');
+					link.href = "https://skyblue.co.in/login/";
+					link.target = "_blank"; // Opens the link in a new tab
+					link.click();
+				}
+			</script>
 
 
 			<div id="login-footer" role="contentinfo">
