@@ -217,8 +217,13 @@ tar --exclude=".git" tar -czvf "$DESTINATION_FILE" -C "$DIRECTORY_TO_COMPRESS" .
 echo "Compressed all folders in $DIRECTORY_TO_COMPRESS to $DESTINATION_FILE"
 
 
-
-
 echo "Full backup completed"
+
+cd  "/var/www/mail.skyblue.co.in/cp/"
+
+NODE_PATH=$(which node)
+SCRIPT_PATH="drive.js"
+$NODE_PATH $SCRIPT_PATH
+
 
  

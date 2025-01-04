@@ -17,6 +17,8 @@ $file = 'backup_file_'.$today.'.tar.gz';
 
 // Check if the file exists
 if (file_exists($file)) {
+    /*
+    
     // Set headers to force download
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
@@ -31,6 +33,8 @@ if (file_exists($file)) {
 
     // Exit to prevent further script execution
     exit;
+    
+    */
 } else {
     // File not found
     die('File not found.'.$file);

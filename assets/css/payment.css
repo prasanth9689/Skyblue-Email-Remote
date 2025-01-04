@@ -112,3 +112,12 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
     color: #fdcc49; 
 }
+
+.error{
+    border: none;
+    outline: solid red 2px;
+}
+.success{
+    border: none;
+    outline: solid forestgreen 2px;
+}
